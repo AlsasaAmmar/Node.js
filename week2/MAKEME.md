@@ -15,7 +15,7 @@ This week you'll continue with the command line exercises. Go back to your comma
 
 ## **2. Node.js Exercises**
 
-> Inside of your `Node.js` fork, go to the folder `week2`. Inside of that folder, create a folder called `nodejs-exercises`.
+> Inside of your `Node.js` fork, go to the folder `week2`. Inside of that folder, create a folder called `nodejs-exercises`.  
 
 ### Make a blog API
 

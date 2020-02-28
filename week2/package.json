@@ -1,0 +1,15 @@
+{
+  "name": "week2",
+  "version": "1.0.0",
+  "description": "1. What is Representational State Transfer (REST)?\r 2. What is Hypertext Transfer Protocol (HTTP)?\r 3. What is a CRUD application?\r 4. Web API\r 5. What is a RESTful API?\r 6. Postman",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ammar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^3.4.0"
+  }
+}

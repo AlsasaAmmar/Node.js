@@ -15,19 +15,32 @@ app.post('/blogs', (req, res) => {
     res.end('ok')
     })
 
-    app.put('/blogs/:blog_name', (req, res) => {
-        // How to get the tile and content from the request??
-        const findBlog = req.params.blog_name; 
-        const newTitle = req.body.title; 
+    app.put('/blogs/', (req, res) => {
+        const findBlog = req.body.title; 
         const newContent = req.body.content; 
     
         if (fs.existsSync(findBlog)) {
-          fs.writeFileSync(newTitle, newContent);
+          fs.writeFileSync(findBlog, newContent);
           res.end('ok')
         }
         else {
           res.end('post does not exist');
         }
     })
+
+    // app.put('/blogs/:blog_name', (req, res) => {
+    //     // How to get the tile and content from the request??
+    //     const findBlog = req.params.blog_name; 
+    //     const newTitle = req.body.title; 
+    //     const newContent = req.body.content; 
+    
+    //     if (fs.existsSync(findBlog)) {
+    //       fs.writeFileSync(newTitle, newContent);
+    //       res.end('ok')
+    //     }
+    //     else {
+    //       res.end('post does not exist');
+    //     }
+    // })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
