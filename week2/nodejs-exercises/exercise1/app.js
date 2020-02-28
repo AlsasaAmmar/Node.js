@@ -6,6 +6,7 @@ const port = 3000;
 const fs = require("fs");
 app.use(express.json());
 
+
 app.post('/blogs', (req, res) => {
     const newBlog = req.body;
     const title = newBlog.title; 
@@ -39,8 +40,12 @@ app.post('/blogs', (req, res) => {
           else {
             res.end('post does not exist');
           }
+    })
 
-       
+    app.get('/blogs/:title', (req, res) => {
+        // How to get the tilte from the url parameters?
+        const blogToView= req.params.title;
+        res.sendfile(blogToView);
     })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
