@@ -28,19 +28,19 @@ app.post('/blogs', (req, res) => {
         }
     })
 
-    // app.put('/blogs/:blog_name', (req, res) => {
-    //     // How to get the tile and content from the request??
-    //     const findBlog = req.params.blog_name; 
-    //     const newTitle = req.body.title; 
-    //     const newContent = req.body.content; 
-    
-    //     if (fs.existsSync(findBlog)) {
-    //       fs.writeFileSync(newTitle, newContent);
-    //       res.end('ok')
-    //     }
-    //     else {
-    //       res.end('post does not exist');
-    //     }
-    // })
+
+    app.delete('/blogs/:title', (req, res) => {
+        // How to get the tilte from the url parameters?
+        const blogToDelete = req.params.title; 
+        if (fs.existsSync(blogToDelete)) {
+            fs.unlinkSync(blogToDelete);
+            res.end('ok');
+          }
+          else {
+            res.end('post does not exist');
+          }
+
+       
+    })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
