@@ -25,6 +25,4 @@ let server = http.createServer(function(req, res) {
   res.end();}
    //end the response
 });
-console.log('server is running...');
-
-server.listen(3000); //the server listens on port 3000
+server.listen(3000, () => console.log('server is running...')); 
