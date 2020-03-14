@@ -1,8 +1,6 @@
 const fetch = require('node-fetch');
-const express = require('express');
-const url = 'https://restapiabasicauthe-sandbox.mxapps.io/api/books'
 
-let app = express();
+const url = 'https://restapiabasicauthe-sandbox.mxapps.io/api/books'
 
 
 fetch(url)
