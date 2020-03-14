@@ -1,7 +1,8 @@
 {
-  "name": "ex2",
+  "name": "code-along",
   "version": "1.0.0",
-  "main": "authentication.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,8 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "node-fetch": "^2.6.0"
-  },
-  "devDependencies": {},
-  "description": ""
+    "moment": "^2.24.0"
+  }
 }

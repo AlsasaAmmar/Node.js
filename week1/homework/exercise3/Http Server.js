@@ -13,7 +13,6 @@ let server = http.createServer(function(req, res) {
   res.write(
     `<html>
   <head>
-  <link rel="stylesheet" type="text/css" href="style.css" />
     <title>My First Web Server</title>
   </head> 
   <body>

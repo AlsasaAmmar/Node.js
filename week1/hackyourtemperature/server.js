@@ -37,8 +37,6 @@ app.post('/weather', (req,res)=> {
     }).catch(error => {
         res.render('index', { weatherText: `Sorry but the city ${newCity} is not found.` })
       })
-    
-    
 })
 
 

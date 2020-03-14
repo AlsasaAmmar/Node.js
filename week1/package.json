@@ -1,0 +1,15 @@
+{
+  "name": "week1",
+  "version": "1.0.0",
+  "description": "These are the topics for week 1:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AMmar",
+  "license": "ISC",
+  "dependencies": {
+    "left-pad": "^1.3.0"
+  },
+  "devDependencies": {}
+}

@@ -131,6 +131,7 @@ let server = http.createServer(function(req, res) {
 server.listen(3000); //the server listens on port 3000
 ```
 
+
 Run the code and check that it works by opening a browser at `http:\\localhost:3000`
 
 Step 4. Instead of returning `Hello World!` the server needs to return the following HTML.
